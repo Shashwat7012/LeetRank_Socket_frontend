@@ -8,7 +8,7 @@
 <body>
     <h1>Socket.IO and Redis Demo</h1>
 
-    <button type="button" id="btn">Set User ID (312)</button>
+    <button type="button" id="btn">Set User ID</button>
     <button id="connectionBtn">Fetch Connection ID</button>
 
     <div id="connectionResponse"></div>
@@ -17,8 +17,8 @@
     <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
     <script>
         // Connect to Socket.IO backend
-        const socket = io('http://localhost:3001');
-        const userId = "312"; // Hardcoded userId for demo
+        const socket = io('http://localhost:3004');
+        const userId = "1"; // Hardcoded userId for demo
 
         document.addEventListener('DOMContentLoaded', () => {
             // Listen for connection to server
